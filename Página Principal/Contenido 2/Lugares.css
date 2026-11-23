@@ -1,0 +1,230 @@
+.casa{
+    position:fixed;
+    bottom:0px;
+    right:0px
+}
+
+:root {
+    --fondo: #171717;
+    --fondo-secundario: #211b19;
+    --naranja: #E87532;
+    --carmesi: #A94438;
+    --marron: #3B2925;
+    --marfil: #F2E2C5;
+    --dorado: #B99A65;
+    --texto-suave: #d2c7b7;
+}
+
+body {
+    margin: 0;
+    background:
+        radial-gradient(
+            circle at top,
+            rgba(169, 68, 56, 0.12),
+            transparent 45%
+        ),
+        var(--fondo);
+    color: var(--marfil);
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.75;
+}
+
+.encabezado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 310px;
+    padding: 55px 20px;
+    border-bottom: 2px solid var(--dorado);
+}
+
+.encabezado-contenido {
+    width: min(1100px, 90%);
+    text-align: center;
+}
+
+.encabezado h1 {
+    margin: 0;
+    color: #fff1d9;
+    font-size: clamp(2.2rem, 6vw, 4.5rem);
+    letter-spacing: 0.1em;
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+}
+
+.indice {
+    width: min(1100px, 90%);
+    margin: 35px auto 45px;
+    padding: 25px 30px;
+    text-align: center;
+    background: rgba(33, 27, 25, 0.88);
+    border-top: 1px solid var(--dorado);
+    border-bottom: 1px solid var(--dorado);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.25);
+}
+
+.indice-titulo {
+    margin: 0 0 24px;
+    color: var(--dorado);
+    font-family: Arial, sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+}
+
+.indice-enlaces {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 22px;
+    row-gap: 12px;
+    align-items: center;
+}
+
+.indice-enlaces a {
+    display: block;
+    color: var(--marfil);
+    font-family: Arial, sans-serif;
+    font-size: 0.96rem;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.indice-enlaces a:hover {
+    color: var(--naranja);
+}
+
+.contenedor {
+    width: min(1120px, 88%);
+    margin: 0 auto;
+}
+
+.seccion {
+    padding: 65px 0;
+    border-bottom: 1px solid rgba(185, 154, 101, 0.25);
+    scroll-margin-top: 25px;
+}
+
+.seccion h2 {
+    position: relative;
+    margin: 0 0 30px;
+    padding-bottom: 13px;
+    color: var(--naranja);
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 600;
+    letter-spacing: 0.07em;
+    text-align: center;
+}
+
+.contenido-lugar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 40px;
+}
+
+.texto-lugar {
+    padding: 12px 15px;
+}
+
+.texto-lugar p {
+    margin: 0 0 18px;
+    color: var(--texto-suave);
+    font-size: 1.05rem;
+    line-height: 1.9;
+    text-align: justify;
+}
+
+.texto-lugar p:last-child {
+    margin-bottom: 0;
+}
+
+.lugar img {
+    display: block;
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+    object-position: center;
+    background: var(--fondo-secundario);
+    border: 1px solid var(--dorado);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.4);
+}
+
+.imagen-izquierda .texto-lugar {
+    order: 2;
+}
+
+.imagen-izquierda img {
+    order: 1;
+}
+
+.multimedia h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+}
+
+.marco-video {
+    width: min(900px, 100%);
+    margin: 0 auto;
+    padding: 9px;
+    border: 1px solid var(--dorado);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.45);
+}
+
+.trailer {
+    display: block;
+    width: 100%;
+    max-height: 510px;
+    background: #000;
+    object-fit: contain;
+}
+
+.reproductor-audio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: min(650px, 100%);
+    margin: 0 auto;
+    padding: 25px;
+    background: rgba(59, 41, 37, 0.45);
+    border: 1px solid var(--dorado);
+}
+
+.audio-etiqueta {
+    color: var(--dorado);
+    font-family: Arial, sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.16em;
+}
+
+.reproductor-audio audio {
+    width: 100%;
+    max-width: 520px;
+}
+
+.navegacion-paginas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: min(1120px, 88%);
+    margin: 35px auto 55px;
+}
+
+.boton-pagina {
+    display: inline-block;
+    padding: 7px 16px;
+    color: var(--marfil);
+    font-family: Arial, sans-serif;
+    font-size: 0.82rem;
+    text-decoration: none;
+    background: var(--fondo-secundario);
+    border: 1px solid var(--dorado);
+    transition: 0.2s ease;
+}
+
+.boton-pagina:hover {
+    color: var(--naranja);
+    border-color: var(--naranja);
+    background: var(--marron);
+}
+

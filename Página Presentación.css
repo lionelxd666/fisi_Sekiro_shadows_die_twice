@@ -1,0 +1,107 @@
+body {
+    background-color: rgb(23, 23, 23);
+    color: rgb(238, 238, 238);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.casa{
+    position:fixed;
+    bottom:0px;
+    right:0px
+}
+
+.encabezado {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 8%;
+    border-bottom: 1px solid #383838;
+}
+
+.logo {
+    width: 125px;
+    height: 125px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.institucion {
+    text-align: center;
+    font-family: "Times New Roman";
+    padding: 0 15px;
+}
+
+.institucion h2 {
+    font-size: 25px;
+    letter-spacing: 0.5px;
+}
+
+.institucion p {
+    color: rgb(204, 204, 204);
+    font-size: 21px;
+    margin-top: 8px;
+}
+
+.portada {
+    max-width: 1000px;
+    margin: 55px auto;
+    padding: 0 25px;
+}
+
+.titulo {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.titulo h1 {
+    font-size: 34px;
+    letter-spacing: 2px;
+}
+
+.imagen-principal {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+}
+
+.datos, .contenido {
+    max-width: 900px;
+    margin: 55px auto;
+    padding: 0 25px;
+}
+
+.datos h2, .contenido h2 {
+    text-align: center;
+    font-size: 27px;
+    font-weight: normal;
+    margin-bottom: 28px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid rgb(119, 119, 119);
+}
+
+.datos p {
+    color: rgb(204, 204, 204);
+    font-size: 19px;
+    margin: 17px 0;
+}
+
+.contenido ol {
+    padding-left: 30px;
+}
+
+.contenido li {
+    padding: 11px 0;
+    color: rgb(184, 59, 59);
+    font-size: 19px;
+}
+
+.contenido a {
+    color: rgb(221, 221, 221);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.contenido a:hover {
+    color: rgb(214, 75, 82);
+}
